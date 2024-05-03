@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de recherche étudiant</title>
+    <style>
+        /* Style facultatif pour rendre le formulaire plus attrayant */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="/rechercher_etudiants.php" method="get">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez le nom de l'étudiant" required>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Entrez le prénom de l'étudiant" required>
+        <input type="submit" value="Rechercher">
+    </form>
+
+</body>
+</html>
